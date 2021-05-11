@@ -97,18 +97,12 @@ public class ViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
             
                 if(counter == 0){
                     color1 = color;
-                    print("color0: ")
-                    print(color1)
                 }
                 else if(counter == 1){
                     color2 = color;
-                    print("color1: ")
-                    print(color2)
                 }
                 else if(counter == 2){
                     color3 = color;
-                    print("color2: ")
-                    print(color3)
                 
             
                 let avgColor = imageView.image?.getAvgColor(pos1: color1, pos2: color2, pos3: color3) ?? .clear
@@ -120,8 +114,6 @@ public class ViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
                 print(avgColor)
                     
                     ViewController.average = avgColor;
-                    print("Average in view controller:")
-                    print(ViewController.average)
                 }
             }
         counter += 1;
